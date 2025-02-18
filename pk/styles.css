@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;700&display=swap');
+body {
+    font-family: 'Tajawal', 'Amiri', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.like-button {
+    background-color: #efef26;
+    color: #333;
+    font-size: 5vw;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.like-button:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+.like-button:active {
+    transform: scale(1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.9;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+#poetre {
+    font-size: 2vw;
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .like-button {
+        font-size: 8vw;
+    }
+    
+    #poetre {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .like-button {
+        font-size: 10vw;
+    }
+    
+    #poetre {
+        font-size: 5vw;
+    }
+}
