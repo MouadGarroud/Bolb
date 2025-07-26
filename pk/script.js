@@ -9,7 +9,7 @@ function toggleBulb() {
         bulbButton.textContent = "💡"; 
         body.style.backgroundColor = "black";
         body.style.color = "white";
-        poetre.textContent = "إِنَّ لَهِيبَ حُسْنِكِ، يَضْرِمُ النَّارَ فِي قَلْبِي، فَأَسْقِنِي مِنْ بُحُورِ عَيْنَيْكِ، حَتَّى يَزِيدَ اشْتِعَالًا."; 
+        poetre.textContent = "لَوْ نَظَرُوا لَكِ بِعَيْنِي لَمَا اِنتَبَهُوا إِلَّا لَكِ، وَلَكِنَّهَا عَيْنِي أَنَا."; 
         
         startSnowfall();
     } else {
